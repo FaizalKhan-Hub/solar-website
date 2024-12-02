@@ -1,0 +1,127 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f9c11c;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f9c11c;
+  }
+  
+  .email-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .email-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .email-form button {
+    padding: 10px 20px;
+    background-color: #f9c11c;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .email-form button:hover {
+    background-color: #e6a900;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #f9c11c;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #e6a900;
+  }
+  
+  .certifications img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #aaa;
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-bottom ul li a:hover {
+    color: #f9c11c;
+  }
+  

@@ -1,0 +1,15 @@
+.company-details {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .company-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .company-details p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  

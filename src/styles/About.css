@@ -1,0 +1,135 @@
+/* General Styles */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding does not overflow */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.about-content {
+  max-width: 800px; /* Limits the width of the content */
+  width: 100%;
+  padding: 20px;
+  background-color: white; /* White background for the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the content */
+  text-align: center; /* Center the text */
+  box-sizing: border-box; /* Ensure padding does not overflow */
+}
+
+.about-content h1 {
+  font-size: 2.5rem; /* Large heading size */
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  font-size: 1.8rem; /* Subheading size */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333; /* Slightly darker text */
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-content ul li {
+  font-size: 1.1rem;
+  padding: 5px 0;
+  color: #555; /* Subtle text color */
+}
+
+/* Responsive Styles */
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Adjust container height to ensure the text is visible */
+  .about-container {
+    min-height: calc(100vh - 40px); /* Adjust based on desired padding */
+    padding: 10px;
+  }
+
+  .about-content {
+    padding: 15px;
+    width: 100%;
+    overflow: auto; /* Allow scrolling if content overflows */
+  }
+
+  .about-content h1 {
+    font-size: 2rem; /* Smaller heading size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem; /* Adjusted subheading size */
+    margin-top: 10px;
+  }
+
+  .about-content p {
+    font-size: 1rem; /* Adjusted text size */
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .about-content ul li {
+    font-size: 1rem; /* Adjusted text size for better readability */
+    margin-bottom: 10px;
+  }
+
+  .about-content ul li::before {
+    content: "• "; /* Custom bullet points for list items */
+    color: #28a745; /* Green bullet points */
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 2.2rem; /* Adjusted heading size for tablets */
+  }
+
+  .about-content h2 {
+    font-size: 1.6rem; /* Adjusted subheading size */
+  }
+
+  .about-content p,
+  .about-content ul li {
+    font-size: 1.05rem; /* Slightly larger text size for tablets */
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+  .about-content {
+    padding: 25px;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem; /* Large heading size for desktops */
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem; /* Subheading size */
+  }
+
+  .about-content p,
+  .about-content ul li {
+    font-size: 1.1rem; /* Default text size */
+  }
+}

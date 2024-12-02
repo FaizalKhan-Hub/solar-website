@@ -1,0 +1,83 @@
+/* Services.css */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Light background */
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #2C3E50; /* Dark color for the header */
+  }
+  
+  .services-header p {
+    font-size: 1.2rem;
+    color: #7F8C8D;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between items */
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .service-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .service-item:hover .service-image {
+    opacity: 0.8; /* Slight fade effect when hovering over service */
+  }
+  
+  .service-item h2 {
+    font-size: 1.8rem;
+    margin: 20px;
+    color: #2980B9; /* Highlight color */
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    margin: 0 20px 20px;
+    color: #34495E;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .services-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .services-header p {
+      font-size: 1.1rem;
+    }
+  }
+  
